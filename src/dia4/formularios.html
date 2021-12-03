@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dia 4 - Formularios</title>
+</head>
+<body>
+    <!-- Formularios en html son muy cimunes -->
+    <!-- login,registro,cntacto,news -->
+    <!-- input(cajas text,numero,fecha,color,mail,pass) -->
+    <!-- select -->
+    <!-- formulario form -->
+    <!-- action: donde se envia la info method: forma info enviada -->
+    <!-- input dentro del form -->
+    <form action="" method="">
+        <!-- input caja de texto -->
+        <!-- placeholder:texto ayuda -->
+        <!-- value:defrente el nombre -->
+        <!-- name: nombre que se le da -->
+        <fieldset>
+        <h4>input</h4>
+        <input type="text" placeholder="Tu nombre pe" value="Chutas" 
+        maxlength="10" minlength="4" name="Nombre">
+        <h4>Input number</h4>
+
+        <input type="number" placeholder="Ingresa nume" name="" id="">
+        <h4>Input hora</h4>
+        <input type="time" placeholder="Ingresa hora"name="" id="">
+        <h4>Input archivo</h4>
+        <input type="file" placeholder="Ingresa archi " id="">
+        <h4>Input color</h4>
+        <input type="color" placeholder="Ingresa color " name="" id="">
+        <h4>Input pass</h4>
+        <input type="password" placeholder="Ingresa pass" id=""
+        required>
+
+        <h4>Input mail</h4>
+        <input type="email" name="" id="email"
+        required>
+        <label for="email">ingresa correo</label>
+        </fieldset>   
+        <!-- Radio button -->
+        <h3>Radio button</h3>
+        <!-- aSIGANR TEXTO ETIQUETA LaBEL -->
+        
+        <input type="radio" name="opc_color" id="">rojo
+        <input type="radio" name="opc_color" id="">verde
+        <input type="radio" name="opc_color" id="">azul
+
+        <h4>Checkbox</h4>
+        <!-- Marcar mas de una opcion -->
+        <input type="checkbox" name="curso" id="">Mate
+        <input type="checkbox" name="curso" id="">Filo
+        <input type="checkbox" name="curso" id="">Lengua
+        <input type="checkbox" name="curso" id="">JS
+
+
+        <h4>select</h4>
+        <!-- Padre select hijo option -->
+        <!-- select tieen name, pero ese va como atributo del select -->
+        <!-- cuando envie la data el select va a enviar el que este selccionado, por ende cada option debe tener un value, xq
+        ese valor es el que envia -->
+        <select name="cursos" id="">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+        </select>
+
+
+        <select name="paises" id="">
+            <option value="peru">Peru</option>
+            <option value="colombia" selected>Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+
+        </select>
+        <h4>textarea</h4>
+        <textarea placeholder="Ingresa"
+        name="text" id="" cols="40" rows="20"></textarea>
+
+        <h4>submitt</h4>
+        <input type="submit" value="env">
+        <button type="submit">Enviar</button>
+
+
+
+    </form>
+</body>
+</html>
