@@ -1,0 +1,124 @@
+/* Que es CSS */
+/* motor de estilos */
+/* DEbo vinculalr .css en mi .html */
+/* estilo global, quitarle pading y margin a una web */
+/* padding: esapcio interno de elemnto */
+/* margin: Espacio externo de elemento */
+
+/* Estilos globales */
+/* Pueso usar * pa estilo globsl */
+/* solo margin y padding y border  box */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/* etiqeyat body */
+body{
+    /* font-family: Permite cmabiar el tipo de letra */
+    /* compus vienen con tipo de letras */
+    /* para usar tipo de letra dsitinta se descarga y agrega al proyecto como archivo o usar link */
+    /* algunas fuentes necesitan estar entre comillas */
+    /* Se puede anidar tipo de letra */
+    /* si no esta instalado uno se usa opciones multiples */
+
+    font-family: 'Gill Sans', Arial, Helvetica, sans-serif;
+    background-color: yellow;
+}
+
+/* aplicar etiqueta espoecial */
+/* h1 rojo */
+h1 {
+    color: red;
+
+    /* background-color:color de fondo */
+    background-color: sandybrown;
+
+    /* font-weight:Peso a las letras */
+    /* rango: 100 -900, tambien tiene propiedad bold*/
+    font-weight: bold;
+}
+
+section {
+    background-color: slategrey;
+    /* border:propiedad para poner borde a elemento: tamano de pixel, color, tipo de linea */
+    border: solid rebeccapurple 4px;
+
+}
+
+/* como acceder a elemto hijo */
+/* Para cceder elemto en cascada puede anidar etiquetas */
+/* Busca elemento article y dentro de este debe estar p y aese pe color zul */
+section article p {
+    color: seashell;
+    text-align: right;
+}
+
+section p {
+    color: sienna;
+    /* text-align>:alienado derecha, izqierda,centro,justifcado */
+    text-align: center;
+    /* font-size:tama;o text */
+    font-size: 18px;
+
+}
+
+/* color li */
+
+li {
+    color: rgb(41, 182, 128);
+}
+nav{
+    border: 3px solid crimson;
+    text-align: right;
+}
+ul{
+    background-color: violet;
+    
+}
+
+/* lista horizontal */
+ul li {
+    /* list-style quita vi;etas a elemento */
+    list-style: none;
+    /* display muestra elemto, por default es display block */
+    display: inline;
+}
+
+a {
+    color: rgb(4, 26, 12);
+    /* text decoration:estilos a txt */
+    /* none>propiedad deshabilitada */
+    text-decoration: none;
+}
+
+div{
+    border: 5px solid cornflowerblue;
+    text-align: center;
+
+}
+
+img{
+    /* widt y height ancho y altura, unidad nasica son px,pixeles */
+    width: 300px;
+    height: 300px;
+}
+/* para accdera Id usamos # mas el nombre que asignamos */
+#titulo{
+    color: darkblue;
+}
+#intro {
+    text-align: justify;
+}
+/* para repetir id se recomienda usar clases */
+/* acceder clase se usa el punto . */
+/* con clases reutiliamoz codigo css */
+.text__pagina {
+    color: rgb(214, 207, 218);
+}
+/* id para logo central o para h1 de web */
+#logo {
+    width: 100px;
+    height: 150px;
+    border: 4px solid coralgit;
+}
